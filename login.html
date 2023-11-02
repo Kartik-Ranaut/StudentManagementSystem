@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="h1">Log In</h1>
+            <select name="loginsel" id="selection">
+                <option value="Student">Student</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Librarian" checked>Librarian</option>
+            </select>
+        </div>
+        <div class="dataBox">
+            <div class="form student">
+                <div class="lblinp">
+                    <label for="name_s">Student No.:</label>
+                    <input type="text" id="name_s">
+                </div>
+                <div class="lblinp">
+                    <label for="password_s">Enter Password</label>
+                    <input type="password" id="password_s"> 
+                </div>
+                <button class="loginBtn_s">Submit</button>
+
+            </div>
+
+            <div class="form teacher">
+                <div class="lblinp">
+                    <label for="name_t">Teacher id:</label>
+                    <input type="text" id="name_t">
+                </div>
+                <div class="lblinp">
+                    <label for="password_t">Enter Password</label>
+                <input type="password" id="password_t">
+                </div>
+                <button class="loginBtn_t">Submit</button>
+
+            </div>
+
+            <div class="form librarian">
+                <div class="lblinp">
+                    <label for="name_l">Librarian id:</label>
+                    <input type="text" id="name_l">
+                </div>
+                <div class="lblinp">
+                    <label for="password_l">Enter Password</label>
+                    <input type="password" id="password_l">
+                </div>
+                <button class="loginBtn_l">Submit</button>
+
+            </div>
+        </div>
+        <a href="signin.html">Don't have account? Regester Here</a>
+    </div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

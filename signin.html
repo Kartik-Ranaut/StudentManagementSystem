@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="h1">Sign In</h1>
+            <select name="loginsel" id="selection">
+                <option value="Student">Student</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Librarian">Librarian</option>
+            </select>
+        </div>
+        <div class="dataBox">
+            
+            <div class="form student">
+                <div class="lblinp">
+                    <label for="name_s">Enter Name:</label>
+                    <input type="text" id="name_s">
+                </div>
+                <div class="lblinp">
+                    <label for="email_s">Enter Mail:</label>
+                    <input type="text" id="email_s">
+                </div>
+                <div class="lblinp">
+                    <label for="stno_s">Student No:</label>
+                    <input type="text" id="stno_s">    
+                </div>
+                <div class="lblinp">
+                    <label for="phno_s">Mobile No:</label>
+                    <input type="text" id="phno_s">
+                </div >
+                <div class="lblinp">
+                    <label for="password_s">Create Password:</label>
+                    <input type="password" id="password_s">
+                </div>
+                <button class="studentBtn">Submit</button>
+            </div>
+            <div class="form teacher">
+                <div class="lblinp">
+                    <label for="name_t">Enter Name:</label>
+                    <input type="text" id="name_t">
+                </div>
+                <div class="lblinp">
+                    <label for="email_t">Enter Mail:</label>
+                    <input type="text" id="email_t">
+                </div>
+                <div class="lblinp">
+                    <label for="thid_t">Teachers id:</label>
+                    <input type="text" id="thid_t">
+                </div>
+                <div class="lblinp">
+                    <label for="phno_t">Mobile No:</label>
+                    <input type="text" id="phno_t">
+                </div >
+                <div class="lblinp">
+                    <label for="password_t">Enter Password:</label>
+                    <input type="password" id="password_t">
+                </div>
+                <button class="teacherBtn">Submit</button>
+            </div>
+
+            <div class="form librarian">
+                <div class="lblinp">
+                    <label for="name_l">Enter Name:</label>
+                    <input type="text" id="name_l">    
+                </div>
+                <div class="lblinp">
+                    <label for="email_l">Enter Mail:</label>
+                    <input type="text" id="email_l">
+                </div>
+                <div class="lblinp">
+                    <label for="libid_l">Librarian id:</label>
+                    <input type="text" id="libid_l">
+                </div>
+                <div class="lblinp">
+                    <label for="phno_l">Mobile No:</label>
+                    <input type="text" id="phno_l">
+                </div>
+                <div class="lblinp">
+                    <label for="password_l">Enter Password:</label>
+                    <input type="password" id="password_l">
+                </div>
+                <button class="librarianBtn">Submit</button>
+            </div>
+    </div>
+    
+    <a href="login.html" style="margin-top: 40px;">Already have account? Login Here</a>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="signin.js"></script>
+</body>
+</html>
